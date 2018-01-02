@@ -15,7 +15,8 @@ defmodule Helloplug.Mixfile do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Server, []}
+      mod: {Server, []},
+      env: [cowboy_port: 8080]
     ]
   end
 
